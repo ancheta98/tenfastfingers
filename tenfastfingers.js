@@ -14,7 +14,8 @@ function rando(){
     }
 	for(var i = 0; i < randArray.length-1; i++){
 		randStr += randArray[i]
-    }
+	}
+		return randStr= randStr.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
 	console.log(randArray, "randarray");
 	console.log(randStr, "randStr");
 }
